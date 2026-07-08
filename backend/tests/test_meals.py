@@ -1,9 +1,10 @@
+from fastapi import status
 from fastapi.testclient import TestClient
 
 def test_list_meals_returns_stubbed_meals(client: TestClient) -> None:
     response = client.get("/api/v1/meals")
 
-    assert response.status_code == 200
+    assert response.status_code == status.HTTP_200_OK
 
     payload = response.json()
     assert len(payload) == 2

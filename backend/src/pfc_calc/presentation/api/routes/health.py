@@ -1,8 +1,8 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, status
 
 router = APIRouter()
 
 
-@router.get("/health")
+@router.get("/health", status_code=status.HTTP_200_OK)
 def healthcheck() -> dict[str, str]:
     return {"status": "ok"}
