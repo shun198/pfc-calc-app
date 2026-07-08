@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 
-from app.presentation.api.dependencies import get_list_meals_usecase
-from app.presentation.api.schemas import MealResponse
-from app.usecases.list_meals import ListMealsUseCase
+from pfc_calc.presentation.api.dependencies import get_list_meals_usecase
+from pfc_calc.presentation.api.schemas import MealResponse
+from pfc_calc.usecases.list_meals import ListMealsUseCase
 
 router = APIRouter()
 

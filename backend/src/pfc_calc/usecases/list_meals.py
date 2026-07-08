@@ -1,5 +1,5 @@
-from app.domain.entities.meal import Meal
-from app.domain.repositories.meal_repository import MealRepository
+from pfc_calc.domain.entities.meal import Meal
+from pfc_calc.domain.repositories.meal_repository import MealRepository
 
 
 class ListMealsUseCase:

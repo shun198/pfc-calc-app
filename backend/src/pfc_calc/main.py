@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from app.presentation.api.routes.health import router as health_router
-from app.presentation.api.routes.meals import router as meals_router
+from pfc_calc.presentation.api.routes.health import router as health_router
+from pfc_calc.presentation.api.routes.meals import router as meals_router
 
 app = FastAPI(title="PFC Calc API", version="0.1.0")
 

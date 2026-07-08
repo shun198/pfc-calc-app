@@ -6,7 +6,7 @@ FastAPI / SQLAlchemy / PostgreSQL の最小セットアップです。
 ## Architecture
 
 ```text
-app/
+src/pfc_calc/
 ├── domain/           # Entity / Repository interface
 ├── usecases/         # Application services
 ├── infrastructure/   # SQLAlchemy / settings / repository implementation
@@ -17,7 +17,7 @@ app/
 
 ```bash
 uv sync
-uv run uvicorn app.main:app --reload
+uv run uvicorn pfc_calc.main:app --reload
 ```
 
 ## Endpoints

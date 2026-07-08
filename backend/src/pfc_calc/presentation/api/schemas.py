@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel
 
-from app.domain.entities.meal import Meal
+from pfc_calc.domain.entities.meal import Meal
 
 
 class MealResponse(BaseModel):
