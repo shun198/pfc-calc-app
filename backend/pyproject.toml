@@ -22,7 +22,7 @@ package = false
 
 [dependency-groups]
 dev = [
-  "pytest>=8.4.1,<8.5.0",
+  "pytest>=9.0.3,<9.1.0",
 ]
 
 [tool.pytest.ini_options]
